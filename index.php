@@ -7,7 +7,7 @@ session_start();
       $username = mysqli_real_escape_string($conn,$_POST['username']);
       $password = mysqli_real_escape_string($conn,$_POST['password']); 
       
-      $sql = "SELECT username,password from users where username='$username' and password='$password'";
+      $sql = "SELECT username,password from users where username='$username' and password=md5('$password')";
 
 		$res=$conn->query($sql);
 		$result=$res->num_rows;

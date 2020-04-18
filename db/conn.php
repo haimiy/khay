@@ -3,7 +3,7 @@
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_NAME','fuoni_hospital');
+define('DB_NAME','khays');
 
 $conn=mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_NAME) or die("ERROR!: Could not connect, ".mysqli_connect_error())
 

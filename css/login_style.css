@@ -1,5 +1,32 @@
-.sidebar{
-	height: 100%;
-	width: 50%;
-	background-color: #111;
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+.sidebar {
+  width: 250px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  transition: all 500ms linear;
+}
+.sidebar.active {
+	left: opx;
+	}
+.sidebar ul li{
+  list-style: none;
+  padding: 15px; 10px;
+  border-bottom: 1px solid 
+}
+.sidebar .toggle-btn{
+	position: absolute;
+	left: 230px;
+	top:20px;
+}
+.sidebar .toggle-btn span{
+	display:block;
+	width:30px;
+	height:5px;
+	background: #171519;
+	margin: 3px 0px;
 }
