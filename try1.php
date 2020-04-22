@@ -1,34 +1,51 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
-    </head>
-    <body>
-        <nav class="mb-4 navbar navbar-expand-lg navbar-dark cyan">
-			<a class="navbar-brand font-bold" href="#">Navbar</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSuapportedContent-4">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"><i class="fa fa-envelope"></i> Contact <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fa fa-gear"></i> Settings</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Profile </a>
-						<div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
-							<a class="dropdown-item" href="#">My account</a>
-							<a class="dropdown-item" href="#">Log out</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
-    </body>
-</html>                                                        
+<head>
+  <title>Admin panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="boostrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function OpenSlideMenu(){
+      document.getElementById('menu').style.width = '300px';
+      document.getElementById('sidebar').style.marginLeft = '300px';
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu" role="userprofile" data-toggle="dropdown"><i class="fa fa-user"></i> Profile </a>
+        <div class="dropdown-menu" aria-labelledby="DropdownMenu">
+          <a class="dropdown-item" href="#">My account</a>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!--left side-->
+  <div id="sidebar">
+
+    <span class="slide">
+      <a href="#" onclick="OpenSlideMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    </span>
+    <div id="menu" class="main-menu">
+    <ul>
+      <li><h2> <a href="#">Admin Panel</a></h2></li>
+      <li> <a class="active" href="#"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+      <li> <a href="#">Add Records</a></li>
+      <li> <a href="#">View Records</a></li>
+      <li><a href="#">Reports</a></li>
+    </ul>
+    </div>
+  </div>
+ <!--left side-->
+ 
+</body>
+</html>

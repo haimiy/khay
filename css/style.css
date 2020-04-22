@@ -1,0 +1,22 @@
+* {
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+.main-menu {
+  width: 300px;
+  background-color: #d7d7d7;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  padding-top: 30px;
+  
+}
+.main-menu {
+ 
+}
+.slide{
+	position: absolute;
+	left: 285;
+	top:20px;
+}
